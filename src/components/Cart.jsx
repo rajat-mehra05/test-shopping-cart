@@ -22,7 +22,15 @@ const Cart = () => {
                         <span>  {prod.product_name} </span>
                         <span style={{color: "maroon"}}> ₹ {prod.selling_price} </span>
                             <div className="dropdown-menu">
-                            <select id = "dropdown" value={prod.qty}>
+                            <select id = "dropdown" value={prod.qty} onChange={(e) => {
+                                dispatch({
+                                    type: "CHANGE_CART_QTY",
+                                    payload: {
+                                        id: prod.id,
+                                        qty: e.target.value
+                                    }
+                                })
+                            }}>
                             {[...Array(prod.inStock).keys()].map((x) => (
                                 <option key={x+1}> {x+1} </option>
                             ))}

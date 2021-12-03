@@ -183,15 +183,17 @@
 .cart-product-container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+ height: 25vh;
   margin: 1rem 0;
   padding: 1rem;
   background-color: #dad7d7;
 }
 
 .cart-product-container img {
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
 
