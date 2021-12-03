@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'   
 import { CartState } from '../context/Context'
 import {AiFillDelete} from "react-icons/ai"
-import {FaShoppingCart} from "react-icons/fa"
+import {FaShoppingCart} from "react-icons/fa";
+import emptyCart from "./emptyCart.jpg"
 
 const Cart = () => {
        const {state: {cart},dispatch} = CartState();
@@ -46,7 +47,12 @@ const Cart = () => {
                     }> <AiFillDelete size="20" /> </button>
                         </div>
                     ))
-                    ) : <h2> Cart <FaShoppingCart size="20" />  is empty, Go back to Home Page </h2>
+                    ) : 
+                        <div className="empty-cart-container">
+
+                     <h2 style={{marginBottom:"1rem", color:"maroon"}}> Cart <FaShoppingCart size="20" />  is empty, Go back to Home Page </h2>
+                    <img src={emptyCart} alt="emptyCart-pic" height={450} width={450} />
+                        </div>
                     
                 }
 
@@ -54,7 +60,7 @@ const Cart = () => {
             <div className="filter-container summary">
                     <span className="filter-title">Subtotal: ({cart.length}) </span>
                     <span style={{fontSize:"1.5rem"}}> Total: ₹ {total} </span>
-                        <button className="add-btn" disabled={cart.length === 0}> Proceed to Checkout </button>
+                        <button className="add-btn" disabled={cart.length === 0} onClick={()=> alert("This is a demo project, thanks for checking out!")}> Proceed to Checkout </button>
             </div>
         </div>
     )
