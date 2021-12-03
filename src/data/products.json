@@ -10,7 +10,7 @@
             "quantity": 2,
             "ratings": 4,
             "fast_delivery": false,
-            "inStock": 2
+            "inStock": 0
         },
         {
             "id": 2,
@@ -37,7 +37,7 @@
             "quantity": 4,
             "ratings": 3,
             "fast_delivery": true,
-            "inStock": 3
+            "inStock": 0
         },
         {
             "id": 4,
@@ -92,7 +92,7 @@
             "quantity": 1,
             "ratings": 4,
             "fast_delivery": false,
-            "inStock": 3
+            "inStock": 0
         },
         {
             "id": 8,
@@ -120,6 +120,20 @@
             "quantity": 2,
             "ratings": 1,
             "fast_delivery": true,
+            "inStock": 0
+        },
+        {
+            "id": 10,
+            "product_name": "Girls Festive & Party Top and Skirt Set  (Red Pack of 1)",
+            
+            "discounted_price": 474,
+            "selling_price": 1499,
+
+            "image_of_product": "https://rukminim1.flixcart.com/image/800/960/ji95yfk0/kids-lehenga-choli/t/p/y/1-2-years-kid244new-6-12m-0-diamo-original-imaewhg2dh5tkafy.jpeg",
+            "brand": "Archiecs Creation",
+            "quantity": 1,
+            "ratings": 4,
+            "fast_delivery": false,
             "inStock": 2
         }
     ]

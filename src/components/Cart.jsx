@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'   
 import { CartState } from '../context/Context'
 import {AiFillDelete} from "react-icons/ai"
+import {FaShoppingCart} from "react-icons/fa"
 
 const Cart = () => {
        const {state: {cart},dispatch} = CartState();
@@ -16,7 +17,8 @@ const Cart = () => {
             <div className="product-container">
                 
                 {
-                    cart.map((prod) => (
+                    cart.length ? (
+                        cart.map((prod) => (
                         <div className="cart-product-container">
                         <img src={prod.image_of_product} alt="product-pic" />
                         <span>  {prod.product_name} </span>
@@ -44,6 +46,8 @@ const Cart = () => {
                     }> <AiFillDelete size="20" /> </button>
                         </div>
                     ))
+                    ) : <h2> Cart <FaShoppingCart size="20" />  is empty, Go back to Home Page </h2>
+                    
                 }
 
             </div>

@@ -1,7 +1,6 @@
 import { CartState } from "../context/Context"
-import Ratings from "./Ratings"
 
-const SingleProduct = ({product, key}) => {
+const SingleProduct = ({product}) => {
 
    const {state: {cart}, dispatch} =  CartState()
 
@@ -19,7 +18,7 @@ const SingleProduct = ({product, key}) => {
                     ) }
                     <p>
 
-                     <Ratings rating={product.ratings} />       
+                    {/*  <Ratings rating={product.ratings} />    */}    
                     </p>
                     {
                         cart.some((prod) => prod.id === product.id) ? (
