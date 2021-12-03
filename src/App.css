@@ -119,6 +119,20 @@
   transition: all .5s ease-in-out;
 }
 
+.del-btn {
+  padding: .2rem;
+  cursor: pointer;
+  color: rgb(37, 61, 37);
+  background-color: #fff;
+  border: 1px solid rgb(92, 88, 88);
+}
+
+.del-btn:hover {
+  background-color: rgb(64, 105, 64);
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
 .single-product {
   width: 30%;
   margin-bottom: 1rem;
@@ -185,3 +199,8 @@
   font-weight: 500;
   font-size: 1.2rem;
 }
+
+#dropdown {
+  width: 3rem;
+}
+

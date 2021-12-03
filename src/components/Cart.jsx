@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'   
 import { CartState } from '../context/Context'
+import {AiFillDelete} from "react-icons/ai"
 
 const Cart = () => {
-       const {state: {cart,dispatch}} = CartState();
+       const {state: {cart},dispatch} = CartState();
 
        const [total, setTotal] = useState("");
 
@@ -20,6 +21,19 @@ const Cart = () => {
                         <img src={prod.image_of_product} alt="product-pic" />
                         <span>  {prod.product_name} </span>
                         <span style={{color: "maroon"}}> ₹ {prod.selling_price} </span>
+                            <div className="dropdown-menu">
+                            <select id = "dropdown" value={prod.qty}>
+                            {[...Array(prod.inStock).keys()].map((x) => (
+                                <option key={x+1}> {x+1} </option>
+                            ))}
+                            </select>
+                            </div>
+                            <button style={{height:"30px"}} className="del-btn" onClick={() =>
+                      dispatch({
+                        type: "REMOVE_FROM_CART",
+                        payload: prod,
+                      })
+                    }> <AiFillDelete size="20" /> </button>
                         </div>
                     ))
                 }

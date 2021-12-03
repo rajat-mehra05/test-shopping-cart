@@ -9,7 +9,8 @@
             "brand": "PETER-ENGLAND",
             "quantity": 2,
             "ratings": 4,
-            "fast_delivery": false
+            "fast_delivery": false,
+            "inStock": 2
         },
         {
             "id": 2,
@@ -22,7 +23,8 @@
             "brand": "PETER-ENGLAND",
             "quantity": 1,
             "ratings": 5,
-            "fast_delivery": true
+            "fast_delivery": true,
+            "inStock": 4
         },
         {
             "id": 3,
@@ -34,7 +36,8 @@
             "image_of_product": "https://rukminim1.flixcart.com/image/800/960/kflftzk0-0/t-shirt/7/n/s/m-pckwcsgf293058-peter-england-original-imafwyf9yhv8g7pq.jpeg",
             "quantity": 4,
             "ratings": 3,
-            "fast_delivery": true
+            "fast_delivery": true,
+            "inStock": 3
         },
         {
             "id": 4,
@@ -46,7 +49,8 @@
             "image_of_product": "https://rukminim1.flixcart.com/image/800/960/kst9gnk0/t-shirt/x/n/b/s-67039901-puma-original-imag6a28uguhgkyf.jpeg",
             "brand": "PUMA",
             "quantity": 1,
-            "fast_delivery": false
+            "fast_delivery": false,
+            "inStock": 3
         },
         {
             "id": 5,
@@ -59,7 +63,8 @@
             "brand": "PUMA",
             "quantity": 1,
             "ratings": 2,
-            "fast_delivery": false
+            "fast_delivery": false,
+            "inStock": 4
         },
         {
             "id": 6,
@@ -72,7 +77,8 @@
             "brand": "PUMA",
             "quantity": 3,
             "ratings": 3,
-            "fast_delivery": true
+            "fast_delivery": true,
+            "inStock": 4
         },
         {
             "id": 7,
@@ -85,7 +91,8 @@
             "brand": "Archiecs Creation",
             "quantity": 1,
             "ratings": 4,
-            "fast_delivery": false
+            "fast_delivery": false,
+            "inStock": 3
         },
         {
             "id": 8,
@@ -98,7 +105,8 @@
             "brand": "Archiecs Creation",
             "quantity": 1,
             "ratings": 5,
-            "fast_delivery": true
+            "fast_delivery": true,
+            "inStock": 2
         },
         {
             "id": 9,
@@ -111,7 +119,8 @@
             "brand": "Archiecs Creation",
             "quantity": 2,
             "ratings": 1,
-            "fast_delivery": true
+            "fast_delivery": true,
+            "inStock": 2
         }
     ]
 }
