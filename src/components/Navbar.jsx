@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar--container">        
-               <h2> <Link to="/" style={{textDecoration: "none", color: "white"}}> Shopping cart  </Link>   </h2>      
+               <h2> <Link to="/" style={{textDecoration: "none", color: "white", fontSize:"2rem"}}> Apna Bazaar  </Link>   </h2>      
              {
                 useLocation().pathname.split("/")[1] !== "cart" && (
 

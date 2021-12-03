@@ -7,7 +7,7 @@
 .navbar--container {
   display: flex;
   justify-content: space-between;
-  background-color: #343a40 ;
+  background-color: #589465 ;
   height: 12vh;
   width: 100%;
 }
@@ -40,7 +40,7 @@
 
 .cart--btn:hover {
   color: white;
-  background-color: rgb(64, 105, 64);
+  background-color: rgb(176, 182, 169);
 }
 
 /* badge */
@@ -82,7 +82,7 @@
   padding: 20px;
   width: 25%;
   height: 70vh;
-  background-color: #343a40;
+  background-color: #589465;
   color: white;
  
 }
@@ -93,12 +93,12 @@
 
 .filter-title {
   font-size: 2rem;
-  color: rgb(223, 222, 236);
+  color: rgb(24, 43, 31);
   font-weight: bold;
 }
 
 .rating-title {
-  color: #bac6d3;
+  color: #121b24;
   font-size: 1.2rem;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .clear-btn:hover {
-  background-color: rgb(64, 105, 64);
+  background-color: rgb(116, 121, 112);
   color: white;
   transition: all .5s ease-in-out;
 }
